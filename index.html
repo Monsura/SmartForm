@@ -2,6 +2,7 @@
 <html>
 
 <head>
+   <meta charset="UTF-8"> 
   <title>SmartForm</title>
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -20,11 +21,11 @@
     <div class="row jumbotron question" id="q1">
       <div class="col-sm-8">
         <div class="form-group">
-          <label for="name" id="name">Name</label>
+          <label for="name">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Name">
         </div>
         <div class="form-group">
-          <label for="email" id="email">Email address</label>
+          <label for="email">Email address</label>
           <input type="email" class="form-control" id="email" placeholder="Email">
         </div>
         <button class="btn btn-success" id="q1next">Next</button>
@@ -35,9 +36,9 @@
     <div class="row jumbotron question" id="q2">
       <div class="col-sm-10 q2">
         <h2>Choose a front-end technology</h2>
-        <button class="btn btn-lg btn-warning">HTML</button>
-        <button class="btn btn-lg btn-danger">CSS</button>
-        <button class="btn btn-lg btn-info">JavaScript</button>
+        <button class="btn btn-lg btn-warning" id="htmlq2">HTML</button>
+        <button class="btn btn-lg btn-danger" id="cssq2">CSS</button>
+        <button class="btn btn-lg btn-info" id="jsq2">JavaScript</button>
       </div>
     </div>
     <!-- Question 2 END -->
@@ -47,22 +48,22 @@
         <p>What do you <strong>like</strong> about HTML?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Learning the basics is trivial
+          <input id="lhtml1" name="likesHTML" type="checkbox"> Learning the basics is trivial
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> No hassle: write code in a text editor and open in Browser
+          <input id="lhtml2" name="likesHTML" type="checkbox"> No hassle: write code in a text editor and open in Browser
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Tags are easy to remember
+          <input id="lhtml3" name="likesHTML" type="checkbox"> Tags are easy to remember
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> HTML5 features like canvas are powerful
+          <input id="lhtml4" name="likesHTML" type="checkbox"> HTML5 features like canvas are powerful
         </label>
         </div>
       </div>
@@ -70,27 +71,27 @@
         <p>What do you <strong>dislike</strong> about HTML?</p>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Difficult to learn
+          <input id="dhtml5" name="likesHTML" type="checkbox"> Difficult to learn
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Having to close tags is annoying!
+          <input id="dhtml6" name="likesHTML" type="checkbox"> Having to close tags is annoying!
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Too many tags and attributes to remember
+          <input id="dhtml7" name="likesHTML" type="checkbox"> Too many tags and attributes to remember
         </label>
         </div>
         <div class="checkbox">
           <label>
-          <input name="likesHTML" type="checkbox"> Code looks pretty messy
+          <input id="dhtml8" name="likesHTML" type="checkbox"> Code looks pretty messy
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="hprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="hnex" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -138,8 +139,8 @@
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="cprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="cnex" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -192,8 +193,8 @@
         </label>
         </div>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="jprev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="jnex" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
@@ -246,8 +247,8 @@
           <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Expert"> Expert
         </label>
         <div class="btnRight">
-          <button class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
-          <button class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button id="q3prev" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Previous</button>
+          <button id="q3next" class="btn btn-success">Next <span class="glyphicon glyphicon-chevron-right"></span></button>
         </div>
       </div>
     </div>
